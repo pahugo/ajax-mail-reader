@@ -14,7 +14,7 @@
           <td>
             <%= link_to show_email_path(id: @emails[i].id), remote: true do %>
             <div class="clickable">
-              <%= @emails[i].object %>
+              <%= @emails[i].object.truncate(35, separator: ' ') %>
             </div>
             <% end %>
           </td>
