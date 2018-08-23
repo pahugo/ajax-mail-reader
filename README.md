@@ -15,4 +15,4 @@ Features: Able to consult, delete email, and mark it as read.
 * rails db:seed
 
 By THP Grenoble: Nicolas Bertin, Ludovic Bourgoin, Tom Ballu
-And some lost sheeps: Hugo Payet, David Bellaga
+And some lost sheeps: Hugo Payet, David Bellaga, Samaneh Vaezi
