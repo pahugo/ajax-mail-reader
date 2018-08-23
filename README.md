@@ -1,6 +1,6 @@
 # AJAX Email Viewer
 
-App in production: https://ajax-email-viewer.herokuapp.com/
+App in production: https://serene-hollows-57873.herokuapp.com/
 
 AJAX requests training.
 Asynchronous DOM manipulations, without page reload.
