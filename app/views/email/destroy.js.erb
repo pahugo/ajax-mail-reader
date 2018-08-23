@@ -1,0 +1,16 @@
+$(document).ready(function() {
+  console.log("ready to destroy");
+
+  let id = <%= @id %>;
+  let tr = $('.email-id:contains("' + id + '"):first').closest('tr');
+
+  tr.children('td')
+        .animate({ padding: 0 })
+        .wrapInner('<div />')
+        .children()
+        .slideUp(function() { $(this).closest('tr').remove(); });
+
+  $('.table-body').fadeOut(300, function() {
+    this.remove();
+  });
+});

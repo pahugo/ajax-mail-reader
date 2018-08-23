@@ -1,0 +1,25 @@
+<div class="container">
+  <h2>Inbox:</h2>
+  <div class="mail-box">
+    <table class="table-object">
+
+      <tr>
+        <th>Object</th>
+      </tr>
+      <% @emails.each_with_index do |email, i| %>
+        <tr class="<%= email.read ? 'object-row' : 'object-row unread' %>">
+          <td class="email-id">
+              <%= email.id %>
+          </td>
+          <td>
+            <%= link_to show_email_path(id: @emails[i].id), remote: true do %>
+            <div class="clickable">
+              <%= @emails[i].object %>
+            </div>
+            <% end %>
+          </td>
+        </tr>
+      <% end %>
+    </table>
+  </div>
+</div>

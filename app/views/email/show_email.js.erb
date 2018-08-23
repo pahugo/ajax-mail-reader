@@ -1,0 +1,18 @@
+$(document).ready(function() {
+  console.log("ready to show")
+  let id = <%= @email.id %>
+  let tr = $('.email-id:contains("' + id + '"):first').closest('tr').removeClass('unread');
+
+  if ($('.table-body').length){
+    $('.table-body').fadeOut(300, function() {
+      this.remove();
+      let show_email = $("<%= j (render 'layouts/email', email: @email) %>").hide();
+      $('.mail-box').append(show_email);
+      show_email.fadeIn(300)
+    })
+  } else {
+    let show_email = $("<%= j (render 'layouts/email', email: @email) %>").hide();
+    $('.mail-box').append(show_email);
+    show_email.fadeIn(300)
+  }
+});

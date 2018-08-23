@@ -1,0 +1,18 @@
+<table class="table-body">
+  <thead>
+    <tr>
+      <th>Body</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="body-row">
+      <td class="td-body">
+        <h3><strong><%= @email.object %><br></strong></h3>
+        <p><%= @email.body %></p>
+        <%= link_to destroy_email_path(id: @email.id), remote: true, method: :delete, class: "delete-link",  data: { confirm: 'Are you sure? You will probably regret this' } do %>
+          <button class="btn btn-danger">Delete email</button>
+        <% end %>
+      </td>
+    </tr>
+  </tbody>
+</table>

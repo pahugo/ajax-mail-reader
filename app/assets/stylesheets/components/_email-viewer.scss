@@ -1,0 +1,122 @@
+body {
+  background: #373B44;
+  background: -webkit-linear-gradient(right, #4286f4, #373B44);
+  background: -o-linear-gradient(right, #4286f4, #373B44);
+  background: linear-gradient(to left, #4286f4, #373B44);
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+.container {
+  min-height: 800px;
+}
+
+h2 {
+  font-family: 'Lobster', cursive;
+  font-size: 45px;
+  color: rgb(208, 198, 204);
+  margin-top: 50px;
+}
+
+table {
+  margin: 10px;
+}
+
+table.table-object {
+  width: 40%;
+  max-width: 400px;
+  tr {
+
+    td:first-of-type {
+      text-align: center;
+    }
+  }
+  tr:first-of-type {
+    height: 50px;
+  }
+}
+
+table.table-body {
+  width: 60%;
+  height: 300px;
+  tr {
+    height: 100%;
+  }
+  tr:first-of-type {
+    height: 50px;
+  }
+}
+
+th {
+  font-family: 'Lobster', cursive;
+  font-size: 28px;
+  color: rgb(208, 198, 204);
+}
+
+td {
+  border: 1px solid black;
+  padding: 0 0 0 0;
+}
+
+.td-body {
+  vertical-align: top;
+  padding: 20px;
+  position: relative;
+}
+
+.mail-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+th {
+  text-align: center;
+}
+
+.clickable {
+  height: 50px;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  vertical-align: middle;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 12px 12px 0 12px;
+}
+
+.email-id {
+ display: none;
+}
+
+a {
+  color: black;
+}
+
+a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.object-row, .body-row {
+  background-color: #7995d6;
+  font-size: 18px;
+  transition: background-color 0.5s;
+}
+
+.object-row:hover {
+  background-color: rgb(137, 187, 209);
+  box-shadow: 5px 10px 18px #888888;
+  font-weight: 600;
+}
+
+.unread {
+  background-color: rgb(187, 180, 130) !important;
+}
+
+.unread:hover {
+  background-color: rgb(233, 225, 175) !important;
+}
+
+.delete-link {
+  position: absolute;
+  bottom: 20px;
+}
